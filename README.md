@@ -23,9 +23,9 @@ Only `features/` is shipped to the app. `test/` stays here.
 ## Writing a rule
 
 ```gherkin
-@DCE
+@DiCE
 @version1
-Feature: DCE001 - Named storeys and spaces
+Feature: DiCE001 - Named storeys and spaces
 
 The rule verifies that each building storey and each space has a name, …
 
@@ -96,7 +96,7 @@ working copy, then run the files through the DiCE rules stage:
 ```bash
 cd ../2026-DiCE-IFC/frontend
 DICE_RULES_DIR=../../DiCE-IFC-Rules npm run validator:assets
-for f in ../../DiCE-IFC-Rules/test/files/DCE/dce001/*.ifc; do npm run --silent validator:check -- "$f" dice_rules; done
+for f in ../../DiCE-IFC-Rules/test/files/DiCE/dice001/*.ifc; do npm run --silent validator:check -- "$f" dice_rules; done
 ```
 
 A `pass-` file should be `valid` and a `fail-` file `invalid` (or `warning` for

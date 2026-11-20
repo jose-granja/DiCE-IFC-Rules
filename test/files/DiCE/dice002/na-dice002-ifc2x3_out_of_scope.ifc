@@ -1,0 +1,14 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [CoordinationView]'),'2;1');
+FILE_NAME('','2026-11-19T20:07:40',(''),(''),'IfcOpenShell 0.9.0post1+b5e509b','IfcOpenShell 0.9.0post1+b5e509b','');
+FILE_SCHEMA(('IFC2X3'));
+ENDSEC;
+DATA;
+#1=IFCPROJECT('2NCUGBtOL6_hv6QzdkCruz',$,'Projeto',$,$,$,$,$,$);
+#2=IFCSITE('3n3P5ThZPELh8spyDAR13Z',$,'Parcela',$,$,$,$,$,$,$,$,$,$,$);
+#3=IFCBUILDING('0DUiYJMUX8cxaJ2yfSs28l',$,'Edificio',$,$,$,$,$,$,$,$,$);
+#4=IFCRELAGGREGATES('1cJIYaXHnBJ8sF_KpbT9ue',$,$,$,#1,(#2));
+#5=IFCRELAGGREGATES('2YmejEIZz1zOs71HAiPjc3',$,$,$,#2,(#3));
+ENDSEC;
+END-ISO-10303-21;
